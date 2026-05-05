@@ -1,0 +1,8 @@
+# CVE-2026-31431 Copy Fail Checker - Dependencias
+# Instalar con: pip install -r requirements.txt
+
+# Para scripts AWS (check_ec2.py, check_eks.py, check_ecs.py, check_all.py)
+boto3>=1.26.0
+
+# Para script SSH (check_ssh.py)
+paramiko>=3.0.0
