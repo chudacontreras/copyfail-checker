@@ -103,3 +103,11 @@ Thumbs.db
 # -----------------------------------------------------------
 *.log
 logs/
+
+
+# -----------------------------------------------------------
+# Archivos .md que no deben ir al commit
+# -----------------------------------------------------------
+ANTES_Y_DESPUES.md
+CAMBIOS_REALIZADOS.md
+RESUMEN_CAMBIOS.md
