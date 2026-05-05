@@ -1,0 +1,105 @@
+# ============================================================
+# CVE-2026-31431 Copy Fail Checker - .gitignore
+# Protege datos sensibles: claves, credenciales, resultados
+# ============================================================
+
+# -----------------------------------------------------------
+# Claves SSH y credenciales
+# -----------------------------------------------------------
+*.pem
+*.key
+*.pub
+id_rsa
+id_ed25519
+id_ecdsa
+id_dsa
+*.ppk
+ssh_host_*
+
+# -----------------------------------------------------------
+# Archivos de hosts (contienen IPs/hostnames internos)
+# -----------------------------------------------------------
+hosts.txt
+hosts*.txt
+inventory.txt
+inventory*.txt
+servers.txt
+servers*.txt
+targets.txt
+*.hosts
+
+# -----------------------------------------------------------
+# Resultados y reportes (pueden contener IPs, kernels, etc.)
+# -----------------------------------------------------------
+*.json
+!package.json
+!package-lock.json
+results/
+reports/
+output/
+reporte*.json
+resultados*.json
+ec2_results*
+eks_results*
+ecs_results*
+ssh_results*
+
+# -----------------------------------------------------------
+# Credenciales AWS y configuración sensible
+# -----------------------------------------------------------
+.aws/
+credentials
+*.credentials
+.env
+.env.*
+.env.local
+.env.production
+*.secret
+*.secrets
+aws-config*
+
+# -----------------------------------------------------------
+# Python
+# -----------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# -----------------------------------------------------------
+# IDEs y editores
+# -----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# -----------------------------------------------------------
+# Logs (pueden contener info de infraestructura)
+# -----------------------------------------------------------
+*.log
+logs/
